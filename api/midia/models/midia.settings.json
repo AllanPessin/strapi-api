@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "midias",
+  "info": {
+    "name": "midia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "imagens": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
